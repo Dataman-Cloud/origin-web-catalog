@@ -19,6 +19,14 @@ var saasOfferings: any = [
 ];
 
 var categories: any = [
+  {id: 'eams', label: "数人云微服务治理", subCategories: [
+    {id: "octopus", label: "Octopus", tags: ['perl'], icon: "icon-octopus-m"},
+    {id: "squid", label: "Squid", tags: ['perl'], icon: "icon-squid-m"},
+    {id: "hawk", label: "Hawk", tags: ['hawk'], icon: "icon-hawk-m"}
+  ]},
+  {id: 'dmos', label: "数人云基础服务", subCategories: [
+    {id: "monitor", label: "Monitor", tags: ['monitor'], iconClass: "font-icon icon-monitor-m"}
+  ]},
   {id: 'languages', label: 'Languages', subCategories: [
     {id: 'java', label: 'Java', tags: ['java'], icon: 'icon-openjdk'},
     {id: 'javascript', tags: ['javascript', 'nodejs', 'js'], label: 'JavaScript', icon: 'icon-js'},

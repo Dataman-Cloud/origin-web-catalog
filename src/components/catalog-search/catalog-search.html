@@ -10,7 +10,7 @@
   <form role="form" class="landing-search-form search-pf has-button" ng-class="{'hidden-xs': $ctrl.toggleAtMobile}">
     <div class="form-group has-clear">
       <div class="search-pf-input-group">
-        <label for="search-input" class="sr-only">Search Catalog</label>
+        <label for="search-input" class="sr-only" translate>Search Catalog</label>
         <span class="fa fa-search catalog-search-icon" aria-hidden="true" ng-click="$ctrl.setSearchInputFocus()"></span>
         <input
             id="search-input"
@@ -18,7 +18,7 @@
             autocomplete="off"
             ng-keypress="$ctrl.onKeyPress($event)"
             class="form-control catalog-search-input"
-            placeholder="Search Catalog"
+            placeholder="{{'Search Catalog'|translate}}"
             ng-model="$ctrl.searchText"
             uib-typeahead="item.name for item in $ctrl.search($viewValue)"
             typeahead-on-select="$ctrl.itemSelected($item)"
@@ -32,7 +32,7 @@
             ng-if="$ctrl.searchText"
             ng-click="$ctrl.searchText = ''"
             class="clear">
-          <span class="sr-only">Clear Search Input</span>
+          <span class="sr-only" translate>Clear Search Input</span>
           <span class="pficon pficon-close" aria-hidden="true"></span>
         </button>
       </div>
